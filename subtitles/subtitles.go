@@ -41,7 +41,7 @@ func Open(src string) (s *Subtitles, err error) {
 	case ".srt":
 		s, err = ReadFromSRT(f)
 	case ".ttml":
-		//s, err = ReadFromTTML(f)
+		s, err = ReadFromTTML(f)
 	case ".vtt":
 		//s, err = ReadFromVTT(f)
 	default:
@@ -208,7 +208,7 @@ func (s Subtitles) Write(dst string) (err error) {
 	case ".srt":
 		err = s.WriteToSRT(f)
 	case ".tml":
-		//err = s.WriteToTTML(f)
+		err = s.WriteToTTML(f)
 	default:
 		err = ErrInvalidExtension
 	}

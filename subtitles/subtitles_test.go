@@ -27,7 +27,7 @@ func assertSubtitles(t *testing.T, i *astisub.Subtitles) {
 	assert.Equal(t, 2*time.Minute+31*time.Second+23*time.Millisecond, i.Items[4].EndAt)
 	assert.Equal(t, []string{"We don't belong", "in this shithole."}, i.Items[4].Text)
 	assert.Equal(t, 2*time.Minute+31*time.Second+56*time.Millisecond, i.Items[5].StartAt)
-	assert.Equal(t, 2*time.Minute+33*time.Second+225*time.Millisecond, i.Items[5].EndAt)
+	assert.Equal(t, 2*time.Minute+33*time.Second+250*time.Millisecond, i.Items[5].EndAt)
 	assert.Equal(t, []string{"(computer playing", "electronic melody)"}, i.Items[5].Text)
 }
 

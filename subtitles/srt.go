@@ -19,7 +19,7 @@ var (
 )
 
 // parseDurationSRT parses an .srt duration
-func parseDurationSRT(i string) (o time.Duration, err error) {
+func parseDurationSRT(i string) (time.Duration, error) {
 	return parseDuration(i, ",")
 }
 
@@ -75,7 +75,7 @@ func ReadFromSRT(i io.Reader) (o *Subtitles, err error) {
 }
 
 // formatDurationSRT formats an .srt duration
-func formatDurationSRT(i time.Duration) (s string) {
+func formatDurationSRT(i time.Duration) string {
 	return formatDuration(i, ",")
 }
 
